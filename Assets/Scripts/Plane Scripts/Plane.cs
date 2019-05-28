@@ -6,20 +6,23 @@ public class Plane : MonoBehaviour
 {
 	public float planeSpeed;
 	private Rigidbody2D myBody;
+    public Sprite[] mayBayDaChon;
+    private scoremanager gm;
+    public static int mayBayId = 0;
+    //	public AudioClip[] audioClip;
 
-//	public AudioClip[] audioClip;
-
-	[SerializeField]
+    [SerializeField]
 	private GameObject bullet;
-
 	private bool canShoot = true;
 
 	void Awake () 
 	{
 		myBody = GetComponent<Rigidbody2D> ();
-	}
+        gm = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<scoremanager>();
+        gameObject.GetComponent<SpriteRenderer>().sprite = mayBayDaChon[mayBayId];
+    }
 
-	void FixedUpdate () 
+    void FixedUpdate () 
 	{
 		PlaneMovement ();
 	}
@@ -47,18 +50,13 @@ public class Plane : MonoBehaviour
     // hàm bắn viên đạn sau 1 khoảng thời gian
 	IEnumerator Shoot()
 	{
-//		PlayShound (0);
 		canShoot = false;
-		Vector3 temp = transform.position;
-		temp.y += 0.6f;
-		Instantiate (bullet, temp, Quaternion.identity);
+        Vector3 temp = transform.position;
+        temp.y += 0.4f;  // vẽ viên đạn
+        Instantiate(bullet, temp, Quaternion.identity); // update vị trí viên đạn
 		yield return new WaitForSeconds (1f);
 		canShoot = true;
-	}
-	/*
-	void PlayShound(int clip)
-	{
-		GetComponent<AudioSource>().clip = audioClip[clip];
-		GetComponent<AudioSource> ().Play();
-	}*/
+        StartCoroutine(Shoot());
+    }
+
 }

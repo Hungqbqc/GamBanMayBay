@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BGscaler : MonoBehaviour 
 {
+
 	void Start () 
 	{
 		var worldHeight = Camera.main.orthographicSize * 2f;    // lấy chiều rộng của màn hình

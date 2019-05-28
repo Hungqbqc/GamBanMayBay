@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{F68F7416-F320-C2C3-67CB-22BDEF688E9E}</ProjectGuid>
+    <ProjectGuid>{792B8E3A-3232-81BF-CBD0-8725DFBF1CB4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\Bullet Scripts\RedBullet.cs" />
     <Compile Include="Assets\Scripts\Bullet Scripts\YellowBullet.cs" />
     <Compile Include="Assets\Scripts\characterControl\characterControl.cs" />
+    <Compile Include="Assets\Scripts\Controller Scripts\ChonMayBayControlleer.cs" />
+    <Compile Include="Assets\Scripts\Controller Scripts\ChonMucDoController.cs" />
     <Compile Include="Assets\Scripts\Controller Scripts\GamePlayController.cs" />
     <Compile Include="Assets\Scripts\Controller Scripts\GioiThieu.cs" />
     <Compile Include="Assets\Scripts\Controller Scripts\MainMenuController.cs" />
@@ -79,19 +81,19 @@
     <Compile Include="Assets\Scripts\Score Scripts\scoreText.cs" />
     <Compile Include="Assets\Scripts\Spawner Scripts\Spawner.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -295,19 +297,19 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/hung2/OneDrive/Máy tính/Game/GameNguyet/Play Shooter/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/hung2/OneDrive/Máy tính/GamBanMayBay/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
@@ -339,7 +341,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B6847B9B-F325-0148-F008-8DDCC2FACD34}</Project>
+      <Project>{E3EA8203-5931-E78E-BCF0-6860EF0992FA}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
